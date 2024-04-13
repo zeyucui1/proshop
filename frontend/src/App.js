@@ -12,8 +12,8 @@ const App = () => {
         <Container>
           <Outlet />
         </Container>
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }

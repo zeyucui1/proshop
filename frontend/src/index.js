@@ -5,6 +5,7 @@ import './assets/styles/index.css'
 import './assets/styles/bootstrap.custom.css'
 import App from './App'
 import HomePage from './pages/HomePage'
+import ProductPage from './pages/ProductPage'
 // import "bootstrap/dist/css/bootstrap.min.css";
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
+      {
+        path: 'product/:id',
+        element: <ProductPage />,
+      }
     ],
   },
 ])

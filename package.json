@@ -6,14 +6,16 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "serve": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run serve\" \"npm run client\""
   },
   "author": "zeyu cui",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

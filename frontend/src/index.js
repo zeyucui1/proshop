@@ -6,6 +6,7 @@ import './assets/styles/bootstrap.custom.css'
 import App from './App'
 import HomePage from './pages/HomePage'
 import ProductPage from './pages/ProductPage'
+import CartPage from './pages/CartPage'
 import store from './store'
 import { Provider } from 'react-redux'
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: 'product/:id',
         element: <ProductPage />,
+      },
+      {
+        path: 'cart',
+        element: <CartPage />,
       },
     ],
   },

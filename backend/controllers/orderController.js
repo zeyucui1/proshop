@@ -56,7 +56,6 @@ const getOrderById = asyncHandler(async (req, res) => {
     'user',
     'name email'
   )
-
   if (order) {
     res.status(200).json(order)
   } else {

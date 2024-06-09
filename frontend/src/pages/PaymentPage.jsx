@@ -34,7 +34,7 @@ const PaymentPage = () => {
           <Col>
             <Form.Check
               className="my-2"
-              type="radio"
+              type="checkbox"
               label="PayPal or Credit Card"
               id="PayPal"
               name="paymentMethod"

@@ -9,6 +9,9 @@ import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import ShippingPage from './pages/ShippingPage'
+import PaymentPage from './pages/PaymentPage'
+import PrivateRoute from './components/PrivateRoute'
 import store from './store'
 import { Provider } from 'react-redux'
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -36,6 +39,30 @@ const router = createBrowserRouter([
       {
         path: 'register',
         element: <RegisterPage />,
+      },
+      {
+        path: 'shipping',
+        element: <PrivateRoute />,
+        children: [
+          {
+            index: true,
+            element: <ShippingPage />,
+          },
+        ],
+      },
+      {
+        path: 'payment',
+        element: <PaymentPage />,
+      },
+      {
+        path: 'payment',
+        element: <PrivateRoute />,
+        children: [
+          {
+            index: true,
+            element: <PaymentPage />,
+          },
+        ],
       },
     ],
   },

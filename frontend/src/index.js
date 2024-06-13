@@ -13,6 +13,7 @@ import ShippingPage from './pages/ShippingPage'
 import PaymentPage from './pages/PaymentPage'
 import PlaceOrderPage from './pages/PlaceOrderPage'
 import OrderPage from './pages/OrderPage'
+import ProfilePage from './pages/ProfilePage'
 import PrivateRoute from './components/PrivateRoute'
 import store from './store'
 import { Provider } from 'react-redux'
@@ -80,6 +81,16 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <OrderPage />,
+          },
+        ],
+      },
+      {
+        path: 'profile',
+        element: <PrivateRoute />,
+        children: [
+          {
+            index: true,
+            element: <ProfilePage />,
           },
         ],
       },

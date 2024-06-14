@@ -14,7 +14,9 @@ import PaymentPage from './pages/PaymentPage'
 import PlaceOrderPage from './pages/PlaceOrderPage'
 import OrderPage from './pages/OrderPage'
 import ProfilePage from './pages/ProfilePage'
+import OrderListPage from './pages/admin/OrderListPage'
 import PrivateRoute from './components/PrivateRoute'
+import AdminRoute from './components/AdminRoute'
 import store from './store'
 import { Provider } from 'react-redux'
 import { PayPalScriptProvider } from '@paypal/react-paypal-js'
@@ -91,6 +93,16 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ProfilePage />,
+          },
+        ],
+      },
+      {
+        path: 'admin/orderlist',
+        element: <AdminRoute />,
+        children: [
+          {
+            index: true,
+            element: <OrderListPage />,
           },
         ],
       },

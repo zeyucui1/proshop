@@ -15,11 +15,15 @@ import PlaceOrderPage from './pages/PlaceOrderPage'
 import OrderPage from './pages/OrderPage'
 import ProfilePage from './pages/ProfilePage'
 import OrderListPage from './pages/admin/OrderListPage'
+import ProductListPage from './pages/admin/ProductListPage'
+import ProductEditPage from './pages/admin/ProductEditPage'
+import UserListPage from './pages/admin/UserListPage'
 import PrivateRoute from './components/PrivateRoute'
 import AdminRoute from './components/AdminRoute'
 import store from './store'
 import { Provider } from 'react-redux'
 import { PayPalScriptProvider } from '@paypal/react-paypal-js'
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 const router = createBrowserRouter([
   {
@@ -103,6 +107,36 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <OrderListPage />,
+          },
+        ],
+      },
+      {
+        path: 'admin/productlist',
+        element: <AdminRoute />,
+        children: [
+          {
+            index: true,
+            element: <ProductListPage />,
+          },
+        ],
+      },
+      {
+        path: 'admin/product/:id/edit',
+        element: <AdminRoute />,
+        children: [
+          {
+            index: true,
+            element: <ProductEditPage />,
+          },
+        ],
+      },
+      {
+        path: 'admin/userlist',
+        element: <AdminRoute />,
+        children: [
+          {
+            index: true,
+            element: <UserListPage />,
           },
         ],
       },

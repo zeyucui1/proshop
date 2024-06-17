@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 const OrderListPage = () => {
   const { data: orders, isLoading, error } = useGetOrdersQuery()
-
+ 
   return (
     <>
       {isLoading ? (
@@ -38,14 +38,22 @@ const OrderListPage = () => {
                 <td>${order.totalPrice}</td>
                 <td>
                   {order.isPaid ? (
-                    order.paidAt.substring(0, 10)
+                    order.paidAt ? (
+                      order.paidAt.substring(0, 10)
+                    ) : (
+                      ''
+                    )
                   ) : (
                     <FaTimes style={{ color: 'red' }} />
                   )}
                 </td>
                 <td>
                   {order.isDelivered ? (
-                    order.deliveredAt.substring(0, 10)
+                    order.deliveredAt ? (
+                      order.deliveredAt.substring(0, 10)
+                    ) : (
+                      ''
+                    )
                   ) : (
                     <FaTimes style={{ color: 'red' }} />
                   )}

@@ -5,20 +5,28 @@ import Product from '../components/ProductItem'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 const HomePage = () => {
-  const { pageNumber } = useParams()
-  const { data, error, isLoading } = useGetProductsQuery({ pageNumber })
+  const { pageNumber, keyword } = useParams()
+  const { data, error, isLoading } = useGetProductsQuery({
+    pageNumber,
+    keyword,
+  })
 
   return (
     <>
+      {keyword && (
+        <Link to="/" className="btn btn-light">
+          Go back
+        </Link>
+      )}
       {isLoading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error.data?.message || error.error}</Message>
       ) : (
         <>
-          <h1>Latest Products</h1>
+          {keyword ? <h1>Search Result:</h1> : <h1>Latest Products</h1>}
           <Row>
             {data.products.map((product) => (
               <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
@@ -26,7 +34,11 @@ const HomePage = () => {
               </Col>
             ))}
           </Row>
-          <Paginate pages={data.pages} page={data.page} />
+          <Paginate
+            pages={data.pages}
+            page={data.page}
+            keyword={keyword ? keyword : ''}
+          />
         </>
       )}
     </>

@@ -16,7 +16,7 @@ const CartPage = () => {
     dispatch(removeFromCart(id))
   }
   const checkOutHandler = () => {
-    navigate('/login?redirect=shipping')
+    navigate('/login?redirect=/shipping')
   }
 
   return (
@@ -89,7 +89,7 @@ const CartPage = () => {
                 disabled={cartItems.length === 0}
                 onClick={checkOutHandler}
               >
-                Proceed To Checkout
+                Checkout
               </Button>
             </ListGroup.Item>
           </ListGroup>

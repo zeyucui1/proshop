@@ -32,11 +32,7 @@ const OrderPage = () => {
     error: errorPaypal,
   } = useGetPaypalClientIdQuery()
   const { userInfo } = useSelector((state) => state.auth)
-  const onApproveTest = async () => {
-    await payOrder({ orderId, details: { payer: {} } })
-    refetch()
-    toast.success('Order paid')
-  }
+
   const onApprove = (data, actions) => {
     return actions.order.capture().then(async function (details) {
       try {

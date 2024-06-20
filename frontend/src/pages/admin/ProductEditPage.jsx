@@ -23,12 +23,11 @@ const ProductEditPage = () => {
   const [description, setDescription] = useState('')
 
   const navigate = useNavigate()
-  const [updateProduct, { isLoading: loadingUpdate, error: updateError }] =
+  const [updateProduct, { isLoading: loadingUpdate }] =
     useUpdateProductMutation()
   const {
     data: product,
     isLoading,
-    refetch,
     error,
   } = useGetProductDetailsQuery(productId)
   const [uploadProductImage, { isloading: loadingUpload }] =

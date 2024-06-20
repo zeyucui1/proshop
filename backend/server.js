@@ -22,9 +22,6 @@ app.use(express.urlencoded({ extended: true }))
 //cookie parser middleware
 app.use(cookieParser())
 
-app.get('/', (req, res) => {
-  res.send('Server is ready')
-})
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
@@ -33,8 +30,22 @@ app.use('/api/upload', uploadRoutes)
 app.get('/api/config/paypal', (req, res) =>
   res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
 )
-const _dirname = path.resolve()
-app.use('/uploads', express.static(path.join(_dirname, '/uploads')))
+
+if (process.env.NODE_ENV === 'production') {
+  const __dirname = path.resolve()
+  app.use('/uploads', express.static('/var/data/uploads'))
+  app.use(express.static(path.join(__dirname, '/frontend/build')))
+
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+  )
+} else {
+  const __dirname = path.resolve()
+  app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
+  app.get('/', (req, res) => {
+    res.send('API is running....')
+  })
+}
 // handle errors
 app.use(notFound)
 app.use(errorHandler)

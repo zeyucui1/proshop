@@ -84,6 +84,8 @@ Ensure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/your-username/your-project.git
+```
+
 cd your-project
 Installation
 Install the project dependencies using npm:
@@ -92,6 +94,7 @@ npm install
 Set Up Environment Variables
 Create a new file named .env in the root of your project and add the following content:
 
+```bash
 NODE_ENV=production
 PORT=5000
 MONGO_URI=mongodb+srv://loading1261:Qh9uG6PA3zLhJA2o@cluster0.qbmedt8.mongodb.net/proshop?retryWrites=true&w=majority&appName=Cluster0
@@ -115,62 +118,57 @@ You can access the live demo [here](https://proshop-bu4u.onrender.com).
 - User: test@email.com | Password: 123456
 - Admin: admin@email.com | Password: 123456
 
-Login Information:
-
-User: test@email.com | Password: 123456
-Admin: admin@email.com | Password: 123456
-
 ## <a name="screenshot">🚀 Screenshot</a>
 
 ### Homepage:
 
-![Homepage](./public/screenshot/proshop_home.png)
+![Homepage](./frontend/public/screenshot/proshop_home.png)
 
 ### Product Page:
 
-![Product Page](./public/screenshot/product.png)
+![Product Page](./frontend/public/screenshot/product.png)
 
 ### Search Page:
 
-![Search Page](./public/screenshot/search.png)
+![Search Page](./frontend/public/screenshot/search.png)
 
 ### Cart Page:
 
-![Cart Page](./public/screenshot/cart.png)
+![Cart Page](./frontend/public/screenshot/cart.png)
 
 ### Shipping Page:
 
-![Shipping Page](./public/screenshot/shipping.png)
+![Shipping Page](./frontend/public/screenshot/shipping.png)
 
 ### PlaceOrder Page:
 
-![PlaceOrder Page](./public/screenshot/placeorder.png)
+![PlaceOrder Page](./frontend/public/screenshot/placeorder.png)
 
 ### Order Page:
 
-![Order Page](./public/screenshot/order.png)
+![Order Page](./frontend/public/screenshot/order.png)
 
 ### SignIn Page:
 
-![SignIn Page](./public/screenshot/signin.png)
+![SignIn Page](./frontend/public/screenshot/signin.png)
 
 ### Register Page:
 
-![Register Page](./public/screenshot/register.png)
+![Register Page](./frontend/public/screenshot/register.png)
 
 ### ProductList Page (for admin user only):
 
-![ProductList Page](./public/screenshot/productlist.png)
-![ProductList Page](./public/screenshot/productlist1.png)
+![ProductList Page](./frontend/public/screenshot/productlist.png)
+![ProductList Page](./frontend/public/screenshot/productlist1.png)
 
 ### UserList Page (for admin user only):
 
-![UserList Page](./public/screenshot/userlist.png)
-![UserList Page](./public/screenshot/userlist1.png)
+![UserList Page](./frontend/public/screenshot/userlist.png)
+![UserList Page](./frontend/public/screenshot/userlist1.png)
 
 ### OrderList Page (for admin user only):
 
-![OrderList Page](./public/screenshot/orderlist.png)
+![OrderList Page](./frontend/public/screenshot/orderlist.png)
 
 ```
 

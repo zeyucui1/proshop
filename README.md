@@ -86,12 +86,12 @@ Ensure you have the following installed on your machine:
 git clone https://github.com/your-username/your-project.git
 ```
 
-cd your-project
-Installation
+### cd your-project
 Install the project dependencies using npm:
-
+```bash
 npm install
-Set Up Environment Variables
+```
+### Set Up Environment Variables
 Create a new file named .env in the root of your project and add the following content:
 
 ```bash
@@ -105,7 +105,7 @@ PAGINATION_LIMIT=8
 
 Replace the placeholder values with your actual credentials.
 
-Running the Project
+### Running the Project
 npm start
 Open http://localhost:3000 in your browser to view the project.
 

@@ -10,6 +10,8 @@
 4. 🤸 [Quick Start](#quick-start)
 5. 🔗 [Live Demo](#live-demo)
 6. 🚀 [Screenshot](#screenshot)
+7. 🔮 [Future Updates](#future-updates)
+8. 📄 [License](#license)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -87,11 +89,15 @@ git clone https://github.com/your-username/your-project.git
 ```
 
 ### cd your-project
+
 Install the project dependencies using npm:
+
 ```bash
 npm install
 ```
+
 ### Set Up Environment Variables
+
 Create a new file named .env in the root of your project and add the following content:
 
 ```bash
@@ -106,6 +112,7 @@ PAGINATION_LIMIT=8
 Replace the placeholder values with your actual credentials.
 
 ### Running the Project
+
 npm start
 Open http://localhost:3000 in your browser to view the project.
 
@@ -169,6 +176,16 @@ You can access the live demo [here](https://proshop-bu4u.onrender.com).
 ### OrderList Page (for admin user only):
 
 ![OrderList Page](./frontend/public/screenshot/orderlist.png)
+
+## <a name="future-updates">🔮 Future Updates</a>
+
+- **Product Categories and Filtering:** Implementing categories for products, allowing users to filter products based on criteria such as lowest to highest price and lowest to highest rating.
+- **Gmail Authentication:** Enabling users to log in using their Gmail accounts for a more convenient authentication process.
+- **UI/UX Improvements:** Enhancing the overall user interface and user experience with a more modern and intuitive design.
+
+## <a name="license">📄 License</a>
+
+This project is open-sourced under the [MIT license](LICENSE).
 
 ```
 

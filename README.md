@@ -186,7 +186,3 @@ You can access the live demo [here](https://proshop-bu4u.onrender.com).
 ## <a name="license">📄 License</a>
 
 This project is open-sourced under the [MIT license](LICENSE).
-
-```
-
-```

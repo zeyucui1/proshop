@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+<div align="center">
+  <h3 align="center">E-commerce Proshop</h3>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 <a name="table">Table of Contents</a>
 
-## Available Scripts
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🔗 [Live Demo](#live-demo)
+6. 🚀 [Screenshot](#screenshot)
 
-In the project directory, you can run:
+## <a name="introduction">🤖 Introduction</a>
 
-### `npm start`
+E-commerce Proshop is an e-commerce website built to sell electronics, demonstrating my skills as a developer. Inspired by e-commerce websites like JB-Hifi, it aims to provide a similar shopping experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**FrontEnd:**
 
-### `npm test`
+- React
+- React Bootstrap (CSS)
+- State Management: Redux & Redux Toolkit
+- Useful Tools: Redux-Helmet (Dynamic Page Title), toast
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Server-side:**
 
-### `npm run build`
+- Node.js
+- Express + Express Async Handler + Nodemon
+- Databases Interaction: Mongoose
+- Server-Side Scripting: JSONWebToken and bcryptjs
+- Postman (API testing)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Databases:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Deployment:**
 
-### `npm run eject`
+- Render
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Version Control:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Git and GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## <a name="features">🔋 Features</a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**As User:**
 
-## Learn More
+- Browsing through the website and seeing different types of products.
+- Creating an account with encrypted information saved in the database.
+- Keeping track of their orders.
+- Maintaining a Cart List with saved data in the database.
+- Leaving reviews and ratings for products.
+- Updating user information in their account.
+- Purchasing items using credit card or PayPal.
+  - **PayPal Sandbox Account:**
+    - Account: sb-bs5ux31187078@business.example.com
+    - Password: +Zy$9g{G
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**As Admin:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- All user privileges plus:
+- Admin Page to control products, orders, and users.
+- Creating new products visually in the manage product page.
+- Updating product information like name, price, image, and description.
+- Managing orders in the order list page.
+- Managing users and setting admin status in the user list page.
 
-### Code Splitting
+## <a name="quick-start">🤸 Quick Start</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow these steps to set up the project locally on your machine.
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ensure you have the following installed on your machine:
 
-### Making a Progressive Web App
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Cloning the Repository
 
-### Advanced Configuration
+```bash
+git clone https://github.com/your-username/your-project.git
+cd your-project
+Installation
+Install the project dependencies using npm:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm install
+Set Up Environment Variables
+Create a new file named .env in the root of your project and add the following content:
 
-### Deployment
+NODE_ENV=production
+PORT=5000
+MONGO_URI=mongodb+srv://loading1261:Qh9uG6PA3zLhJA2o@cluster0.qbmedt8.mongodb.net/proshop?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=abc123
+PAYPAL_CLIENT_ID=ASceZCYi-_LgrJ_9y2Vzcv5AHaOXfem6_HHs6nsIm1vnhZDQV5sqZzvxp9cSCbiLF0QjutYEtK-RrK1q
+PAGINATION_LIMIT=8
+```
+Replace the placeholder values with your actual credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Running the Project
+npm start
+Open http://localhost:3000 in your browser to view the project.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <a name="live-demo">🔗 Live Demo</a>
+
+You can access the live demo [here](https://proshop-bu4u.onrender.com).
+
+**Login Information:**
+- User: test@email.com  | Password: 123456
+- Admin: admin@email.com | Password: 123456
+
+Login Information:
+
+User: test@email.com | Password: 123456
+Admin: admin@email.com | Password: 123456
+
+## <a name="screenshot">🚀 Screenshot</a>
+
+### Homepage:
+![Homepage](./public/screenshot/proshop_home.png)
+
+### Product Page:
+![Product Page](./public/screenshot/product.png)
+
+### Search Page:
+![Search Page](./public/screenshot/search.png)
+
+### Cart Page:
+![Cart Page](./public/screenshot/cart.png)
+
+### Shipping Page:
+![Shipping Page](./public/screenshot/shipping.png)
+
+### PlaceOrder Page:
+![PlaceOrder Page](./public/screenshot/placeorder.png)
+
+### Order Page:
+![Order Page](./public/screenshot/order.png)
+
+### SignIn Page:
+![SignIn Page](./public/screenshot/signin.png)
+
+### Register Page:
+![Register Page](./public/screenshot/register.png)
+
+### ProductList Page (for admin user only):
+![ProductList Page](./public/screenshot/productlist.png)
+![ProductList Page](./public/screenshot/productlist1.png)
+
+### UserList Page (for admin user only):
+![UserList Page](./public/screenshot/userlist.png)
+![UserList Page](./public/screenshot/userlist1.png)
+
+### OrderList Page (for admin user only):
+![OrderList Page](./public/screenshot/orderlist.png)
+
+
+```

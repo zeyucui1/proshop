@@ -99,19 +99,20 @@ JWT_SECRET=abc123
 PAYPAL_CLIENT_ID=ASceZCYi-_LgrJ_9y2Vzcv5AHaOXfem6_HHs6nsIm1vnhZDQV5sqZzvxp9cSCbiLF0QjutYEtK-RrK1q
 PAGINATION_LIMIT=8
 ```
+
 Replace the placeholder values with your actual credentials.
 
 Running the Project
 npm start
 Open http://localhost:3000 in your browser to view the project.
 
-
 ## <a name="live-demo">🔗 Live Demo</a>
 
 You can access the live demo [here](https://proshop-bu4u.onrender.com).
 
 **Login Information:**
-- User: test@email.com  | Password: 123456
+
+- User: test@email.com | Password: 123456
 - Admin: admin@email.com | Password: 123456
 
 Login Information:
@@ -122,42 +123,55 @@ Admin: admin@email.com | Password: 123456
 ## <a name="screenshot">🚀 Screenshot</a>
 
 ### Homepage:
+
 ![Homepage](./public/screenshot/proshop_home.png)
 
 ### Product Page:
+
 ![Product Page](./public/screenshot/product.png)
 
 ### Search Page:
+
 ![Search Page](./public/screenshot/search.png)
 
 ### Cart Page:
+
 ![Cart Page](./public/screenshot/cart.png)
 
 ### Shipping Page:
+
 ![Shipping Page](./public/screenshot/shipping.png)
 
 ### PlaceOrder Page:
+
 ![PlaceOrder Page](./public/screenshot/placeorder.png)
 
 ### Order Page:
+
 ![Order Page](./public/screenshot/order.png)
 
 ### SignIn Page:
+
 ![SignIn Page](./public/screenshot/signin.png)
 
 ### Register Page:
+
 ![Register Page](./public/screenshot/register.png)
 
 ### ProductList Page (for admin user only):
+
 ![ProductList Page](./public/screenshot/productlist.png)
 ![ProductList Page](./public/screenshot/productlist1.png)
 
 ### UserList Page (for admin user only):
+
 ![UserList Page](./public/screenshot/userlist.png)
 ![UserList Page](./public/screenshot/userlist1.png)
 
 ### OrderList Page (for admin user only):
+
 ![OrderList Page](./public/screenshot/orderlist.png)
 
+```
 
 ```
